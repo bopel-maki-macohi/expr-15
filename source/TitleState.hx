@@ -5,6 +5,7 @@ import flixel.FlxState;
 class TitleState extends FlxState
 {
 	public var title:ButtonText = new ButtonText('Data Music Viz', true, ButtonText.SCALE_MAIN);
+	public var play:ButtonText = new ButtonText('Press me to play!', true, ButtonText.SCALE_QUARTER);
 
 	override function create()
 	{
@@ -18,5 +19,13 @@ class TitleState extends FlxState
 			FlxG.openURL('https://github.com/bopel-maki-macohi/expr-15');
 		});
         title.screenCenter();
+
+        add(play);
+        play.screenCenter();
+        play.onClick.add(function() {
+            FlxG.switchState(() -> new MenuState());
+        });
+
+        title.y -= play.height * 2;
 	}
 }
