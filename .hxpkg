@@ -1,0 +1,19 @@
+[
+	{
+		"profile": "default",
+		"pkgs": [
+			{
+				"name": "flixel"
+			},
+			{
+				"name": "openfl"
+			},
+			{
+				"name": "lime"
+			},
+			{
+				"name": "json2object"
+			}
+		]
+	}
+]
