@@ -28,7 +28,7 @@ class SplashState extends FlxState
 
 		trace('Starting splash...');
 
-		FlxG.sound.play(AssetsUtil.sound('sounds/splash.wav'));
+		FlxG.sound.play(AssetsUtil.sound('splash/splash.wav'));
 		FlxTween.tween(companyText, {alpha: 0}, 1, {
 			startDelay: 1,
 			onComplete: function(t)
