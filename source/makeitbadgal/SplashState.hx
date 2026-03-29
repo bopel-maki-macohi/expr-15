@@ -47,6 +47,6 @@ class SplashState extends FlxState
 
 	public static function startingStateBehavior()
     {
-		FlxG.switchState(() -> new PlayState());
+		FlxG.switchState(() -> new TitleState());
     }
 }
