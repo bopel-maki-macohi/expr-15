@@ -1,3 +1,4 @@
+import flixel.util.FlxColor;
 import flixel.FlxG;
 import flixel.FlxState;
 
@@ -9,10 +10,13 @@ class TitleState extends FlxState
 	{
 		super.create();
 
+        FlxG.camera.bgColor = FlxColor.WHITE;
+
 		add(title);
 		title.onClick.add(function()
 		{
 			FlxG.openURL('https://github.com/bopel-maki-macohi/expr-15');
 		});
+        title.screenCenter();
 	}
 }
